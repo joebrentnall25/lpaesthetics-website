@@ -1,7 +1,45 @@
+.nav {
+  background-color: #20c4cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav > .nav__container {
+  margin: 0 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav > .nav__container > .nav__logo {
+  height: 100px;
+  width: 100px;
+}
+.nav > .nav__container > .nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav > .nav__container > .nav__list .nav__list-item {
+  list-style-type: none;
+  margin-right: 3rem;
+  color: #dbdbdb;
+}
+.nav > .nav__container > .nav__list .nav__list-item > a {
+  text-decoration: none;
+  color: #dbdbdb;
+}
+.nav > .nav__container > .nav__list .nav__list-item > a:hover {
+  color: #FCFBFD;
+}
+.nav > .nav__container > .nav__list .nav__list-item .active {
+  color: #FCFBFD;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -13,48 +51,49 @@ h2 {
   font-family: "Raleway", sans-serif;
 }
 
+.footer {
+  background-color: #20c4cb;
+  color: #FCFBFD;
+}
+.footer .footer__container {
+  margin: 0 25%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .footer__container .footer_info {
+  text-align: left;
+}
+.footer .footer__container .footer__links {
+  text-align: right;
+}
+.footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
+  padding-top: 1rem;
+}
+.footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
+  list-style-type: none;
+}
+.footer p {
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: #20c4cb;
+  color: #FCFBFD;
+  width: 300px;
+  padding: 2rem 10px 2rem 10px;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FCFBFD;
-}
-body .nav {
-  background-color: #20c4cb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-body .nav > .nav__container {
-  margin: 0 15%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-body .nav > .nav__container > .nav__logo {
-  height: 100px;
-  width: 100px;
-}
-body .nav > .nav__container > .nav__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-body .nav > .nav__container > .nav__list .nav__list-item {
-  list-style-type: none;
-  margin-right: 3rem;
-  color: #dbdbdb;
-}
-body .nav > .nav__container > .nav__list .nav__list-item > a {
-  text-decoration: none;
-  color: #dbdbdb;
-}
-body .nav > .nav__container > .nav__list .nav__list-item > a:hover {
-  color: #FCFBFD;
-}
-body .nav > .nav__container > .nav__list .nav__list-item .active {
-  color: #FCFBFD;
 }
 body .hero {
   width: 100%;
@@ -71,6 +110,12 @@ body .hero .hero__image {
   width: 100%;
   height: 100px;
   background-size: cover;
+}
+body .hero .hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 body .services .services__container {
   margin-top: 3rem;
@@ -99,13 +144,6 @@ body .buttons {
   justify-content: center;
   column-gap: 2rem;
 }
-body .buttons .buttons__btn {
-  background-color: #20c4cb;
-  color: #FCFBFD;
-  width: 300px;
-  padding: 2rem 10px 2rem 10px;
-  border: none;
-}
 body .beforeafter {
   margin-top: 5rem;
 }
@@ -128,7 +166,7 @@ body .contact {
 body .contact > .contact__container {
   background-color: #FCFBFD;
   padding: 2rem;
-  margin: 2rem 25%;
+  margin: 2rem 30%;
   border-radius: 1rem;
   border: 2px solid #2E282A;
 }
@@ -166,30 +204,4 @@ body .contact > .contact__container > .contact__contact-form .contact__submit-bt
   background-color: #20c4cb;
   color: #FCFBFD;
   font-size: 16px;
-}
-body .footer {
-  background-color: #20c4cb;
-  color: #FCFBFD;
-}
-body .footer .footer__container {
-  margin: 0 25%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-body .footer .footer__container .footer_info {
-  text-align: left;
-}
-body .footer .footer__container .footer__links {
-  text-align: right;
-}
-body .footer .footer__container .footer__info ul, body .footer .footer__container .footer__links ul {
-  padding-top: 1rem;
-}
-body .footer .footer__container .footer__info ul, body .footer .footer__container .footer__links ul {
-  list-style-type: none;
-}
-body .footer p {
-  text-align: center;
 }

@@ -1,66 +1,19 @@
-$primary-color: #20c4cb;
-$secondary-color: #2E282A;
-$tertiary-color: #FCFBFD;
-$inactive-links-color: #dbdbdb;
-$title-color: #DE51C0;
+@import "assets/styles/variables.scss";
+@import "assets/styles/nav.scss";
+@import "assets/styles/typography.scss";
+@import "assets/styles/footer.scss";
+@import "assets/styles/buttons.scss";
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
-h2 {
-    color: $title-color;
-    text-align: center;
-    font-size: 36px;
-    margin-top: 2rem;
-    font-family: 'Raleway', sans-serif;
-}
+
 
 body {
     background-color: $tertiary-color;
-    .nav {
-        background-color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        > .nav__container {
-            margin: 0 15%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            > .nav__logo {
-                height: 100px;
-                width: 100px;        
-            }
-            > .nav__list {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                .nav__list-item {
-                    list-style-type: none;
-                    margin-right: 3rem;
-                    color: $inactive-links-color;
-                    > a {
-                        text-decoration: none;
-                        color: $inactive-links-color;
-                    }
-                    > a:hover {
-                        color: $tertiary-color;
-                    }
-                    .active {
-                        color: $tertiary-color;
-                    }
-                }
-            }
-        }
-    }
 
     .hero {
         width: 100%;
@@ -76,6 +29,12 @@ body {
             width: 100%;
             height: 100px;
             background-size: cover;
+        }
+        .hero__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
     }
 
@@ -108,13 +67,6 @@ body {
         flex-direction: row;
         justify-content: center;
         column-gap: 2rem;
-        .buttons__btn {
-            background-color: $primary-color;
-            color: $tertiary-color;
-            width: 300px;
-            padding: 2rem 10px 2rem 10px;
-            border: none;
-        }
     }
 
     .beforeafter {
@@ -139,7 +91,7 @@ body {
         > .contact__container {
             background-color: $tertiary-color;
             padding: 2rem;
-            margin: 2rem 25%;
+            margin: 2rem 30%;
             border-radius: 1rem;
             border: 2px solid $secondary-color;
             > .contact__contact-form {
@@ -178,32 +130,5 @@ body {
                 }
             }
         }        
-    }
-
-    .footer {
-        background-color: $primary-color;
-        color: $tertiary-color;
-        .footer__container {
-            margin: 0 25%;
-            padding: 2rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .footer_info {
-                text-align: left;
-            }
-            .footer__links {
-                text-align: right;
-            }
-            .footer__info ul, .footer__links ul{
-                padding-top: 1rem;
-            }
-            .footer__info ul, .footer__links ul{
-                list-style-type: none;
-            }
-        }
-        p {
-            text-align: center;
-        }
     }
 }
