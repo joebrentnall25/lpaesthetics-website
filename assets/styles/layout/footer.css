@@ -3,20 +3,22 @@
   color: #FCFBFD;
 }
 .footer .footer__container {
-  margin: 0 25%;
+  margin: 0 10%;
   padding: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.footer .footer__container .footer_info {
-  text-align: left;
+.footer .footer__container .footer__info {
+  text-align: center;
 }
 .footer .footer__container .footer__links {
-  text-align: right;
+  text-align: center;
 }
 .footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
-  padding-top: 1rem;
+  padding: 0;
 }
 .footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
   list-style-type: none;

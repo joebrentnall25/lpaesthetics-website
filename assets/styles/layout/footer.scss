@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.footer {
+    background-color: $primary;
+    color: $light;
+    .footer__container {
+        margin: 0 10%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .footer__info {
+            text-align: center;
+        }
+        .footer__links {
+            text-align: center;
+        }
+        .footer__info ul, .footer__links ul{
+            padding: 0;
+        }
+        .footer__info ul, .footer__links ul{
+            list-style-type: none;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,22 @@
+@import "../utilities/variables";
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+    color: $secondary;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+}
+
+ul {
+    padding: 0;
+}
+
+.important-info {
+    color: $primary;
+    font-weight: bold;
+    font-size: 22px;
+}

@@ -4,33 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Louise Peers Aesthetics Derby | Botox | Lip Fillers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__container">
-            <img src="assets/photos/lp_logo_transparent.png" alt="Louise Peers Aesthetics" class="nav__logo">
-            <ul class="nav__list">
-                <li class="nav__list-item"><a class="active" href="index.html">HOME</a></li>
-                <li class="nav__list-item"><a href="#">Services</a></li>
-                <li class="nav__list-item"><a href="#">FAQ</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ms3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="assets/photos/lp_logo_transparent.png" alt="" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+
+
+    <section class="offers">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/photos/dealExample.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/photos/dealExample.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
 
     <header class="hero">
-        <div class="hero__image">
-            <div class="hero__container">                
-                <h2>Welcome!</h2>
-                <h3>Free Consultations</h3>
-                <button class="primary-btn">Find out more.</button>
+        <div class="hero__container"> 
+            <div class="hero__content">
+                <div class="hero__img"></div>
+                <div class="hero__bio">
+                    <h2>Louise Peers.</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti animi quae tempore eveniet sapiente omnis incidunt, corrupti totam? Et optio impedit vero tempora consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, voluptatum ipsam nisi odit expedita enim reiciendis ex aspernatur.
+                    </p>
+                </div>
             </div>
         </div>
     </header>
+
 
     <section class="services">
         <h2>Services</h2>
@@ -47,13 +93,24 @@
         </div>
     </section>
 
+    <section class="information">
+        <div class="information__container">
+            <h2>Free Consultations</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus vel ipsa veniam distinctio quasi ad quam delectus.</p>
+        </div>
+        <div class="information__container">
+            <h2>Appointments</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, quaerat nesciunt. Quisquam, sint minima aliquam mollitia hic dolorum iusto.</p>
+        </div>
+    </section>
+
     <section class="buttons">
-        <button class="primary-btn">Download my price list</button>
-        <button class="primary-btn">View our FAQ</button>
+        <button class="primary-btn">Download price list</button>
+        <button class="primary-btn">View FAQ</button>
     </section>
 
     <section class="beforeafter">
-        <h2>Before and Afters</h2>
+        <h2 .>Before and Afters</h2>
         <div class="beforeafter__container">
             <div class="beforeafter__img"></div>
             <div class="beforeafter__img"></div>
@@ -62,18 +119,10 @@
     </section>
 
     <section class="contact">
-        <h2>Get in touch!</h2>
         <div class="contact__container">
-            <form action="" class="contact__contact-form">
-                <label for="name">Full name:</label>
-                <input type="text" name="name" id="name" required placeholder="Enter full name.">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject" required placeholder="Enter subject for message.">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message here." required></textarea>
-                <button class="contact__submit-btn" type="submit">Send</button>
-            </form>
+            <button class="primary-btn">Get in touch!</button>
         </div>
+        
     </section>
 
     <footer class="footer">
@@ -101,5 +150,6 @@
         </div>
         <p class="footer__copyright">Louise Peers Aesthetics (2021)</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
