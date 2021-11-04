@@ -1,0 +1,26 @@
+.footer {
+  background-color: #20c4cb;
+  color: #FCFBFD;
+}
+.footer .footer__container {
+  margin: 0 25%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .footer__container .footer_info {
+  text-align: left;
+}
+.footer .footer__container .footer__links {
+  text-align: right;
+}
+.footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
+  padding-top: 1rem;
+}
+.footer .footer__container .footer__info ul, .footer .footer__container .footer__links ul {
+  list-style-type: none;
+}
+.footer p {
+  text-align: center;
+}

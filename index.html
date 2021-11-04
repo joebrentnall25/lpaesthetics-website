@@ -7,13 +7,99 @@
     <link rel="stylesheet" href="styles.css">
     <title>Louise Peers Aesthetics Derby | Botox | Lip Fillers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Condensed:wght@300;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="body__container">
-        <h1 class="body__header">Louise Peers Aesthetics</h1>
-        <h2 class="body__subheader">Coming Soon.</h2>
-    </div>    
+    <nav class="nav">
+        <div class="nav__container">
+            <img src="assets/photos/lp_logo_transparent.png" alt="Louise Peers Aesthetics" class="nav__logo">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="active" href="index.html">HOME</a></li>
+                <li class="nav__list-item"><a href="#">Services</a></li>
+                <li class="nav__list-item"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero__image">
+            <div class="hero__container">                
+                <h2>Welcome!</h2>
+                <h3>Free Consultations</h3>
+                <button class="primary-btn">Find out more.</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <h2>Services</h2>
+        <div class="services__container">
+            <div class="services__box">
+                BTX
+            </div>
+            <div class="services__box">
+                Lip Fillers
+            </div>
+            <div class="services__box">
+                Dermal Fillers
+            </div>
+        </div>
+    </section>
+
+    <section class="buttons">
+        <button class="primary-btn">Download my price list</button>
+        <button class="primary-btn">View our FAQ</button>
+    </section>
+
+    <section class="beforeafter">
+        <h2>Before and Afters</h2>
+        <div class="beforeafter__container">
+            <div class="beforeafter__img"></div>
+            <div class="beforeafter__img"></div>
+            <div class="beforeafter__img"></div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get in touch!</h2>
+        <div class="contact__container">
+            <form action="" class="contact__contact-form">
+                <label for="name">Full name:</label>
+                <input type="text" name="name" id="name" required placeholder="Enter full name.">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" required placeholder="Enter subject for message.">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message here." required></textarea>
+                <button class="contact__submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__header">Useful Information</h3>
+                <ul class="footer__info-list">
+                    <li>Phone Number</li>
+                    <li>Email Address</li>
+                    <li><br></li>
+                    <li>Address Line 1</li>
+                    <li>Address Line 2</li>
+                    <li>City</li>
+                    <li>Postcode</li>
+                    <li>Directions</li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__header">Userful Links</h3>
+                <ul class="footer__links-list">
+                    <li>Download my price list</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright">Louise Peers Aesthetics (2021)</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.nav {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    > .nav__container {
+        margin: 0 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        > .nav__logo {
+            height: 100px;
+            width: 100px;        
+        }
+        > .nav__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .nav__list-item {
+                list-style-type: none;
+                margin-right: 3rem;
+                color: $inactive-links-color;
+                > a {
+                    text-decoration: none;
+                    color: $inactive-links-color;
+                }
+                > a:hover {
+                    color: $tertiary-color;
+                }
+                .active {
+                    color: $tertiary-color;
+                }
+            }
+        }
+    }
+}
