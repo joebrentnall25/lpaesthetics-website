@@ -1,0 +1,9 @@
+@import "../utilities/variables";
+
+.primary-btn {
+    background-color: $primary;
+    color: $light;
+    width: 300px;
+    padding: 1rem 10px 1rem 10px;
+    border: none;
+}

@@ -1,24 +1,3 @@
-* {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-h2 {
-  color: #DE51C0;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 36px;
-}
-
-ul {
-  padding: 0;
-}
-
-.important-info {
-  color: #20c4cb;
-  font-weight: bold;
-  font-size: 22px;
-}
-
 .footer {
   background-color: #20c4cb;
   color: #FCFBFD;
@@ -54,6 +33,27 @@ ul {
   width: 300px;
   padding: 1rem 10px 1rem 10px;
   border: none;
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h2 {
+  color: #DE51C0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+}
+
+ul {
+  padding: 0;
+}
+
+.important-info {
+  color: #20c4cb;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .hero {
@@ -191,16 +191,6 @@ ul {
   margin-bottom: 2rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #FCFBFD;
-}
-
 @media screen and (min-width: 992px) {
   .beforeafter .beforeafter__container {
     display: flex;
@@ -210,4 +200,13 @@ body {
   .information .information__container p {
     padding: 0 10%;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCFBFD;
 }

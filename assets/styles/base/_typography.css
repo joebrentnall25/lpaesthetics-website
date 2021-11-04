@@ -5,7 +5,16 @@
 h2 {
   color: #DE51C0;
   text-align: center;
-  font-size: 36px;
-  margin-top: 2rem;
   font-family: "Raleway", sans-serif;
+  font-size: 36px;
+}
+
+ul {
+  padding: 0;
+}
+
+.important-info {
+  color: #20c4cb;
+  font-weight: bold;
+  font-size: 22px;
 }
