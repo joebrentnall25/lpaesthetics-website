@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2b7f6fb16c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -23,7 +24,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -82,7 +86,7 @@
         <h2>Services</h2>
         <div class="services__container">
             <div class="services__box">
-                BTX
+                Anti-Wrinkle Treatment
             </div>
             <div class="services__box">
                 Lip Fillers
@@ -91,6 +95,7 @@
                 Dermal Fillers
             </div>
         </div>
+        <button class="primary-btn">View all Services</button>
     </section>
 
     <section class="information">
@@ -120,7 +125,12 @@
 
     <section class="contact">
         <div class="contact__container">
-            <button class="primary-btn">Get in touch!</button>
+            <h2>Get in touch.</h2>
+            <form action="" class="contact__form">
+              <input type="text" name="name" id="name" placeholder="Name" required>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+              <button type="submit">Send!</button>
+            </form>
         </div>
         
     </section>
@@ -144,6 +154,8 @@
                 <h3 class="footer__header">Userful Links</h3>
                 <ul class="footer__links-list">
                     <li>Download my price list</li>
+                    <li>Services</li>
+                    <li>Anti-wrinkle treatment</li>
                     <li>FAQ</li>
                 </ul>
             </div>

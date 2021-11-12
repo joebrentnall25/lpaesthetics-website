@@ -1,0 +1,27 @@
+.contact {
+  margin: 2rem 3rem;
+}
+.contact .contact__container {
+  margin: 5rem 0;
+}
+.contact .contact__container .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__container .contact__form input, .contact .contact__container .contact__form textarea, .contact .contact__container .contact__form button {
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border: 2px solid #20c4cb;
+}
+.contact .contact__container .contact__form button {
+  color: #FCFBFD;
+  background-color: #DE51C0;
+  border: none;
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    margin: 0 25%;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.contact {
+    margin: 2rem 3rem;
+    .contact__container {
+        margin: 5rem 0;
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+            input, textarea, button {
+                padding: 1.5rem;
+                margin-top: 1rem;
+                border-radius: 2rem;
+                border: 2px solid $secondary;
+            }
+            button {
+                color: $light;
+                background-color: $primary;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact {
+        margin: 0 25%;
+    }
+    
+}
