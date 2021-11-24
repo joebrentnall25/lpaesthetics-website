@@ -1,6 +1,35 @@
 .footer {
   background-color: #20c4cb;
+  color: #2E282A;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__reviews-container {
+  background-color: #DE51C0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__reviews-container h2 {
+  margin: 1rem 0;
   color: #FCFBFD;
+}
+.footer .footer__reviews-container .footer__reviews {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__reviews-container .footer__reviews .footer__review {
+  width: 80vw;
+  padding: 2rem;
+  background-color: #FCFBFD;
+  border-radius: 2rem;
+}
+.footer .footer__reviews-container .footer__reviews .footer__review .footer__review-para {
+  white-space: pre-line;
 }
 .footer .footer__container {
   margin: 0 10%;
