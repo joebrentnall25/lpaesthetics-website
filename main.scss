@@ -1,18 +1,25 @@
+// Utility
 @import "assets/styles/utilities/variables";
+
+// Layout
 @import "assets/styles/layout/footer.scss";
+
+// Components
 @import "assets/styles/components/buttons.scss";
+@import "assets/styles/components/form";
+
+// Base
 @import "assets/styles/base/typography.scss";
 
+// Pages
 @import "assets/styles/pages/home.scss";
-@import "assets/styles/pages/services";
+@import "assets/styles/pages/services.scss";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 body {
     background-color: $light    

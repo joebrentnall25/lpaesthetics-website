@@ -1,8 +1,39 @@
 @import "../utilities/variables";
 
 .footer {
-    background-color: $primary;
-    color: $light;
+    background-color: $secondary;
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+    .footer__reviews-container {
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin: 1rem 0;
+            color: $light;
+        }
+        .footer__reviews {
+            overflow: auto;
+            white-space: nowrap;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            .footer__review {
+                width: 80vw;
+                padding: 2rem;
+                background-color: $light;
+                border-radius: 2rem;
+                .footer__review-name {
+                }
+                .footer__review-para {
+                    white-space:pre-line;
+                }
+            }
+        }
+    }
     .footer__container {
         margin: 0 10%;
         padding: 2rem;
@@ -26,5 +57,15 @@
     }
     p {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer {
+        .footer__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 }
